@@ -3,7 +3,7 @@ pipeline{
     stages{
 	stage("Pull latest image"){
 		steps{
-			bat "docker-pull supernova25k/selenium-docker"
+			bat "docker pull supernova25k/selenium-docker"
 		}
 	}
 	stage("Start Grid"){
